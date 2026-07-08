@@ -1,0 +1,143 @@
+:: StoryTitle
+Wedding
+
+
+:: StoryData
+{
+  "ifid": "A65E6A26-8673-439B-B216-390041C6895D",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "P1",
+  "zoom": 1
+}
+
+
+:: P1 {"position":"600,100","size":"100,100"}
+{<h1>Lorem Ipsum</h1>
+<div class="container">
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer risus erat, viverra nec pharetra et,
+            viverra eu elit. Vestibulum fringilla fringilla ex et porta. Maecenas facilisis urna metus, at consequat
+            nulla efficitur eget. Nulla eget magna eleifend, mattis nibh in, pharetra est. Donec non commodo lorem.
+            Praesent eu blandit ligula. Maecenas vitae varius felis, nec scelerisque tellus. Mauris vulputate
+            efficitur
+            lectus et pulvinar. Curabitur consequat risus ligula, ac efficitur neque posuere quis. Donec id tortor
+            vulputate, hendrerit neque eu, lobortis felis.
+        </p>
+        <p>
+            Donec eu ligula dolor. Praesent metus neque, pulvinar ac turpis nec, auctor dapibus odio. Duis volutpat
+            pretium magna sit amet fermentum. Aliquam erat volutpat. Vivamus rhoncus nec elit quis ultricies.
+            Integer
+            euismod bibendum dui, ac tristique dolor interdum nec. Pellentesque habitant morbi tristique senectus et
+            netus et malesuada fames ac turpis egestas. Nunc dictum ornare quam, nec accumsan justo efficitur sed.
+            Nullam mi elit, sodales ac tempus eget, tincidunt et odio. Aenean imperdiet mauris massa, vitae rhoncus
+            erat
+            condimentum id. Donec nec orci semper nisl gravida feugiat. Quisque mattis magna quis posuere facilisis.
+            Sed
+            nec rutrum nisi. Nunc eu placerat dolor, eleifend volutpat augue.
+        </p>
+        <p><i>Klik op een bloem om verder te gaan in het verhaal.</i></p>
+    </div>
+    <div class="character-grid">
+        <div>(link: '<img class="character1" src="./flower.webp">')[(goto: "P2 Character 3")]</div>
+        <div>(link: '<img class="character2" src="./flower.webp">')[(goto: "P2 Character 3")]</div>
+        <div>(link: '<img class="character3" src="./flower.webp">')[(goto: "P2 Character 3")]</div>
+        <div>(link: '<img class="character4" src="./flower.webp">')[(goto: "P2 Character 3")]</div>
+        <div>(link: '<img class="character5" src="./flower.webp">')[(goto: "P2 Character 3")]</div>
+    </div>
+</div>
+
+
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        gap: 10px;
+    }
+
+    .character-grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-auto-rows: 5rem;
+        background-color: dodgerblue;
+        padding: 10px;
+    }
+
+    .character-grid img {
+        max-width: 5rem;
+    }
+</style>}
+
+
+:: P2 Character 3 {"position":"600,225","size":"100,100"}
+{<div class="container">
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer risus erat, viverra nec pharetra et,
+            viverra eu elit. Vestibulum fringilla fringilla ex et porta. Maecenas facilisis urna metus, at consequat
+            nulla efficitur eget. Nulla eget magna eleifend, mattis nibh in, pharetra est. Donec non commodo lorem.
+            Praesent eu blandit ligula. Maecenas vitae varius felis, nec scelerisque tellus. Mauris vulputate
+            efficitur
+            lectus et pulvinar. Curabitur consequat risus ligula, ac efficitur neque posuere quis. Donec id tortor
+            vulputate, hendrerit neque eu, lobortis felis.
+        </p>
+
+        <div class="choices">
+            (link: '<img src="./flower.webp">')[(goto: "P3 C3 a")]
+            (link: '<img src="./flower.webp">')[(goto: "P3 C3 b")]
+        </div>
+    </div>
+    <div>
+        <img src="./pastel_kleuren.avif">
+    </div>
+</div>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .choices {
+        display: flex;
+    }
+
+    .choices img {
+        max-width: 7rem;
+    }
+</style>}
+
+
+:: P3 C3 a {"position":"525,350","size":"100,100"}
+[[P4 C3]]
+
+
+:: P3 C3 b {"position":"675,350","size":"100,100"}
+[[P4 C3]]
+
+
+:: P4 C3 {"position":"600,475","size":"100,100"}
+[[P5 C3 a]]
+[[P5 C3 b]]
+
+
+:: P5 C3 a {"position":"525,600","size":"100,100"}
+[[P6 C3]]
+
+
+:: P5 C3 b {"position":"675,600","size":"100,100"}
+[[P6 C3]]
+
+
+:: P6 C3 {"position":"600,725","size":"100,100"}
+[[P7 C3 a]]
+[[P7 C3 b]]
+
+
+:: P7 C3 a {"position":"525,850","size":"100,100"}
+
+
+
+:: P7 C3 b {"position":"675,850","size":"100,100"}
+
