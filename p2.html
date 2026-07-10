@@ -11,26 +11,27 @@
         </p>
 
         <div class="choices">
-            (link: '<img src="./flower.webp">')[(goto: "P3 C3 a")]
-            (link: '<img src="./flower.webp">')[(goto: "P3 C3 b")]
+            [[P3 C3 a]]
+            [[P3 C3 a]]
         </div>
     </div>
-    <div>
-        <img src="./pastel_kleuren.avif">
-    </div>
+    <img src="./summer_chique.jpeg">
 </div>
 
 <style>
     .container {
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+        gap: 2rem;
+        padding-top: 1rem;
     }
 
     .choices {
         display: flex;
+        gap: 1rem;
     }
 
-    .choices img {
-        max-width: 7rem;
+    .container img {
+        max-width: 100%;
     }
 </style>

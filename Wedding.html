@@ -9,7 +9,166 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Wedding.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Wedding" startnode="1" creator="Twine" creator-version="2.12.0" format="Harlowe" format-version="3.3.9" ifid="A65E6A26-8673-439B-B216-390041C6895D" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="P1" tags="" position="600,100" size="100,100">{&lt;h1&gt;Lorem Ipsum&lt;/h1&gt;
+<tw-storydata name="Wedding" startnode="1" creator="Twine" creator-version="2.12.0" format="Harlowe" format-version="3.3.9" ifid="A65E6A26-8673-439B-B216-390041C6895D" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-sidebar {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  left: auto;
+  width: auto;
+  text-align: center;
+  background-color: transparent;
+}
+
+tw-sidebar tw-icon:nth-of-type(1) {
+  background-image: url('./arrow.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 0;
+  color: transparent;
+  opacity: .5;
+}
+
+tw-sidebar tw-icon:nth-of-type(1):hover {
+  opacity: 1;
+}
+
+tw-sidebar tw-icon:nth-of-type(2) {
+  display: none;
+}
+
+tw-story {
+  background-color: #EBF3F9;
+  color: #2C3E50;
+  padding: 2rem;
+}
+
+tw-passage {
+  background-image: url('./flower_corner.webp');
+  background-repeat: no-repeat, no-repeat;
+  background-size: 200px auto; 
+  padding: 50px 0 0 25px;
+  
+  background-clip: border-box; 
+  border-left: 75px solid transparent;
+
+  background-position: left -75px top 0px;
+}
+
+tw-expression tw-link {
+  background-color: #E1BEE7;
+  border: 0 solid #1A365D;
+  box-sizing: border-box;
+  color: #2C3E50;
+  display: flex;
+  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1.75rem;
+  padding: .75rem 1.65rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none #2C3E50 solid;
+  text-decoration-thickness: auto;
+  width: 100%;
+  max-width: 460px;
+  position: relative;
+  cursor: pointer;
+  transform: rotate(-2deg);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+tw-expression tw-link.visited {
+  color: #2C3E50 !important;
+}
+
+tw-expression tw-link:hover {
+  color: #6941E1 !important;
+}
+
+tw-expression tw-link:focus {
+  outline: 0;
+}
+
+tw-expression tw-link:after {
+  content: '';
+  position: absolute;
+  border: 1px solid #2C3E50;
+  bottom: 4px;
+  left: 4px;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+}
+
+tw-expression tw-link:hover:after {
+  bottom: 2px;
+  left: 2px;
+}
+
+@media (min-width: 768px) {
+  tw-expression tw-link {
+    padding: .75rem 3rem;
+    font-size: 1.25rem;
+  }
+}
+
+h1 {
+  color: #1A365D;
+  width: 100%;
+  display: inline-block;
+  background-image: url(./underline_curl.svg);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: 620px 100px;
+  padding-bottom: 40px;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-top: 0;
+}
+
+i {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
+  display: inline-block;
+  background-image: url(./underline.svg);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding-bottom: .5rem;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript">document.addEventListener('DOMContentLoaded', () => {
+  const carousel = document.getElementById('carousel');
+  
+  // Verify the element exists before adding event listeners
+  if (carousel) {
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    carousel.addEventListener('mousedown', (e) => {
+      isDown = true; 
+      startX = e.pageX - carousel.offsetLeft; 
+      scrollLeft = carousel.scrollLeft;
+    });
+    
+    carousel.addEventListener('mouseleave', () => isDown = false);
+    carousel.addEventListener('mouseup', () => isDown = false);
+    
+    carousel.addEventListener('mousemove', (e) => {
+      if(!isDown) return; 
+      e.preventDefault(); 
+      const x = e.pageX - carousel.offsetLeft;
+      carousel.scrollLeft = scrollLeft - (x - startX);
+    });
+  }
+});
+</script><tw-passagedata pid="1" name="P1" tags="" position="600,100" size="100,100">{&lt;h1&gt;Lorem Ipsum&lt;/h1&gt;
 &lt;div class=&quot;container&quot;&gt;
     &lt;div&gt;
         &lt;p&gt;
@@ -25,43 +184,53 @@
             Donec eu ligula dolor. Praesent metus neque, pulvinar ac turpis nec, auctor dapibus odio. Duis volutpat
             pretium magna sit amet fermentum. Aliquam erat volutpat. Vivamus rhoncus nec elit quis ultricies.
             Integer
-            euismod bibendum dui, ac tristique dolor interdum nec. Pellentesque habitant morbi tristique senectus et
-            netus et malesuada fames ac turpis egestas. Nunc dictum ornare quam, nec accumsan justo efficitur sed.
-            Nullam mi elit, sodales ac tempus eget, tincidunt et odio. Aenean imperdiet mauris massa, vitae rhoncus
-            erat
-            condimentum id. Donec nec orci semper nisl gravida feugiat. Quisque mattis magna quis posuere facilisis.
-            Sed
-            nec rutrum nisi. Nunc eu placerat dolor, eleifend volutpat augue.
         &lt;/p&gt;
         &lt;p&gt;&lt;i&gt;Klik op een bloem om verder te gaan in het verhaal.&lt;/i&gt;&lt;/p&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;character-grid&quot;&gt;
-        &lt;div&gt;(link: &#39;&lt;img class=&quot;character1&quot; src=&quot;./flower.webp&quot;&gt;&#39;)[(goto: &quot;P2 Character 3&quot;)]&lt;/div&gt;
-        &lt;div&gt;(link: &#39;&lt;img class=&quot;character2&quot; src=&quot;./flower.webp&quot;&gt;&#39;)[(goto: &quot;P2 Character 3&quot;)]&lt;/div&gt;
-        &lt;div&gt;(link: &#39;&lt;img class=&quot;character3&quot; src=&quot;./flower.webp&quot;&gt;&#39;)[(goto: &quot;P2 Character 3&quot;)]&lt;/div&gt;
-        &lt;div&gt;(link: &#39;&lt;img class=&quot;character4&quot; src=&quot;./flower.webp&quot;&gt;&#39;)[(goto: &quot;P2 Character 3&quot;)]&lt;/div&gt;
-        &lt;div&gt;(link: &#39;&lt;img class=&quot;character5&quot; src=&quot;./flower.webp&quot;&gt;&#39;)[(goto: &quot;P2 Character 3&quot;)]&lt;/div&gt;
+    &lt;div class=&quot;carousel&quot;&gt;
+        &lt;div class=&quot;slide&quot;&gt;(link: &#39;&lt;img src=&quot;./character.jpg&quot;&gt;&#39;)[(goto: &quot;P2 Character 3&quot;)]&lt;/div&gt;
+        &lt;div class=&quot;slide&quot;&gt;(link: &#39;&lt;img src=&quot;./character.jpg&quot;&gt;&#39;)[(goto: &quot;P2 Character 3&quot;)]&lt;/div&gt;
+        &lt;div class=&quot;slide&quot;&gt;(link: &#39;&lt;img src=&quot;./character.jpg&quot;&gt;&#39;)[(goto: &quot;P2 Character 3&quot;)]&lt;/div&gt;
+        &lt;div class=&quot;slide&quot;&gt;(link: &#39;&lt;img src=&quot;./character.jpg&quot;&gt;&#39;)[(goto: &quot;P2 Character 3&quot;)]&lt;/div&gt;
+        &lt;div class=&quot;slide&quot;&gt;(link: &#39;&lt;img src=&quot;./character.jpg&quot;&gt;&#39;)[(goto: &quot;P2 Character 3&quot;)]&lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
-
 
 &lt;style&gt;
     .container {
         display: grid;
-        grid-template-columns: 60% 40%;
+        grid-template-columns: calc(60% - 5px) calc(40% - 5px);
         gap: 10px;
     }
 
-    .character-grid {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        grid-auto-rows: 5rem;
-        background-color: dodgerblue;
-        padding: 10px;
+    .carousel {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        width: 100%;
+        scroll-timeline: --carouselTimeline inline;
+        gap: 15px;
+        padding: 3rem;
+        padding-top: 0;
+        box-sizing: border-box;
     }
 
-    .character-grid img {
-        max-width: 5rem;
+    .carousel::-webkit-scrollbar {
+        display: none;
+    }
+
+    .slide {
+        flex: 0 0 85%;
+        scroll-snap-align: center;
+    }
+
+    .slide img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 8px;
+        filter: drop-shadow(3px 3px 1px #2c3e50);
     }
 &lt;/style&gt;}</tw-passagedata><tw-passagedata pid="2" name="P2 Character 3" tags="" position="600,225" size="100,100">{&lt;div class=&quot;container&quot;&gt;
     &lt;div&gt;
@@ -76,31 +245,321 @@
         &lt;/p&gt;
 
         &lt;div class=&quot;choices&quot;&gt;
-            (link: &#39;&lt;img src=&quot;./flower.webp&quot;&gt;&#39;)[(goto: &quot;P3 C3 a&quot;)]
-            (link: &#39;&lt;img src=&quot;./flower.webp&quot;&gt;&#39;)[(goto: &quot;P3 C3 b&quot;)]
+            [[P3 C3 a]]
+            [[P3 C3 b]]
         &lt;/div&gt;
     &lt;/div&gt;
-    &lt;div&gt;
-        &lt;img src=&quot;./pastel_kleuren.avif&quot;&gt;
-    &lt;/div&gt;
+    &lt;img src=&quot;./summer_chique.jpeg&quot;&gt;
 &lt;/div&gt;
 
 &lt;style&gt;
     .container {
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+        gap: 2rem;
+        padding-top: 1rem;
     }
 
     .choices {
         display: flex;
+        gap: 1rem;
     }
 
-    .choices img {
-        max-width: 7rem;
+    .container img {
+        max-width: 100%;
+        max-height: 70vh;
     }
-&lt;/style&gt;}</tw-passagedata><tw-passagedata pid="3" name="P3 C3 a" tags="" position="525,350" size="100,100">[[P4 C3]]</tw-passagedata><tw-passagedata pid="4" name="P3 C3 b" tags="" position="675,350" size="100,100">[[P4 C3]]</tw-passagedata><tw-passagedata pid="5" name="P4 C3" tags="" position="600,475" size="100,100">[[P5 C3 a]]
-[[P5 C3 b]]</tw-passagedata><tw-passagedata pid="6" name="P5 C3 a" tags="" position="525,600" size="100,100">[[P6 C3]]</tw-passagedata><tw-passagedata pid="7" name="P5 C3 b" tags="" position="675,600" size="100,100">[[P6 C3]]</tw-passagedata><tw-passagedata pid="8" name="P6 C3" tags="" position="600,725" size="100,100">[[P7 C3 a]]
-[[P7 C3 b]]</tw-passagedata><tw-passagedata pid="9" name="P7 C3 a" tags="" position="525,850" size="100,100"></tw-passagedata><tw-passagedata pid="10" name="P7 C3 b" tags="" position="675,850" size="100,100"></tw-passagedata></tw-storydata>
+&lt;/style&gt;}</tw-passagedata><tw-passagedata pid="3" name="P3 C3 a" tags="" position="525,350" size="100,100">{&lt;div class=&quot;container&quot;&gt;
+    &lt;div&gt;
+        &lt;p&gt;
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer risus erat, viverra nec pharetra et,
+            viverra eu elit. Vestibulum fringilla fringilla ex et porta. Maecenas facilisis urna metus, at consequat
+            nulla efficitur eget. Nulla eget magna eleifend, mattis nibh in, pharetra est. Donec non commodo lorem.
+            Praesent eu blandit ligula. Maecenas vitae varius felis, nec scelerisque tellus. Mauris vulputate
+            efficitur
+            lectus et pulvinar. Curabitur consequat risus ligula, ac efficitur neque posuere quis. Donec id tortor
+            vulputate, hendrerit neque eu, lobortis felis.
+        &lt;/p&gt;
+
+        &lt;div class=&quot;choices&quot;&gt;
+            [[P4 C3]]
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;img src=&quot;./summer_chique.jpeg&quot;&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+    .container {
+        display: grid;
+        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    .choices {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .container img {
+        max-width: 100%;
+        max-height: 70vh;
+    }
+&lt;/style&gt;}</tw-passagedata><tw-passagedata pid="4" name="P3 C3 b" tags="" position="675,350" size="100,100">{&lt;div class=&quot;container&quot;&gt;
+    &lt;div&gt;
+        &lt;p&gt;
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer risus erat, viverra nec pharetra et,
+            viverra eu elit. Vestibulum fringilla fringilla ex et porta. Maecenas facilisis urna metus, at consequat
+            nulla efficitur eget. Nulla eget magna eleifend, mattis nibh in, pharetra est. Donec non commodo lorem.
+            Praesent eu blandit ligula. Maecenas vitae varius felis, nec scelerisque tellus. Mauris vulputate
+            efficitur
+            lectus et pulvinar. Curabitur consequat risus ligula, ac efficitur neque posuere quis. Donec id tortor
+            vulputate, hendrerit neque eu, lobortis felis.
+        &lt;/p&gt;
+
+        &lt;div class=&quot;choices&quot;&gt;
+            [[P4 C3]]
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;img src=&quot;./summer_chique.jpeg&quot;&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+    .container {
+        display: grid;
+        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    .choices {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .container img {
+        max-width: 100%;
+        max-height: 70vh;
+    }
+&lt;/style&gt;}</tw-passagedata><tw-passagedata pid="5" name="P4 C3" tags="" position="600,475" size="100,100">{&lt;div class=&quot;container&quot;&gt;
+    &lt;div&gt;
+        &lt;p&gt;
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer risus erat, viverra nec pharetra et,
+            viverra eu elit. Vestibulum fringilla fringilla ex et porta. Maecenas facilisis urna metus, at consequat
+            nulla efficitur eget. Nulla eget magna eleifend, mattis nibh in, pharetra est. Donec non commodo lorem.
+            Praesent eu blandit ligula. Maecenas vitae varius felis, nec scelerisque tellus. Mauris vulputate
+            efficitur
+            lectus et pulvinar. Curabitur consequat risus ligula, ac efficitur neque posuere quis. Donec id tortor
+            vulputate, hendrerit neque eu, lobortis felis.
+        &lt;/p&gt;
+
+        &lt;div class=&quot;choices&quot;&gt;
+            [[P5 C3 a]]
+            [[P5 C3 b]]
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;img src=&quot;./summer_chique.jpeg&quot;&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+    .container {
+        display: grid;
+        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    .choices {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .container img {
+        max-width: 100%;
+        max-height: 70vh;
+    }
+&lt;/style&gt;}</tw-passagedata><tw-passagedata pid="6" name="P5 C3 a" tags="" position="525,600" size="100,100">{&lt;div class=&quot;container&quot;&gt;
+    &lt;div&gt;
+        &lt;p&gt;
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer risus erat, viverra nec pharetra et,
+            viverra eu elit. Vestibulum fringilla fringilla ex et porta. Maecenas facilisis urna metus, at consequat
+            nulla efficitur eget. Nulla eget magna eleifend, mattis nibh in, pharetra est. Donec non commodo lorem.
+            Praesent eu blandit ligula. Maecenas vitae varius felis, nec scelerisque tellus. Mauris vulputate
+            efficitur
+            lectus et pulvinar. Curabitur consequat risus ligula, ac efficitur neque posuere quis. Donec id tortor
+            vulputate, hendrerit neque eu, lobortis felis.
+        &lt;/p&gt;
+
+        &lt;div class=&quot;choices&quot;&gt;
+            [[P6 C3]]
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;img src=&quot;./summer_chique.jpeg&quot;&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+    .container {
+        display: grid;
+        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    .choices {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .container img {
+        max-width: 100%;
+        max-height: 70vh;
+    }
+&lt;/style&gt;}</tw-passagedata><tw-passagedata pid="7" name="P5 C3 b" tags="" position="675,600" size="100,100">{&lt;div class=&quot;container&quot;&gt;
+    &lt;div&gt;
+        &lt;p&gt;
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer risus erat, viverra nec pharetra et,
+            viverra eu elit. Vestibulum fringilla fringilla ex et porta. Maecenas facilisis urna metus, at consequat
+            nulla efficitur eget. Nulla eget magna eleifend, mattis nibh in, pharetra est. Donec non commodo lorem.
+            Praesent eu blandit ligula. Maecenas vitae varius felis, nec scelerisque tellus. Mauris vulputate
+            efficitur
+            lectus et pulvinar. Curabitur consequat risus ligula, ac efficitur neque posuere quis. Donec id tortor
+            vulputate, hendrerit neque eu, lobortis felis.
+        &lt;/p&gt;
+
+        &lt;div class=&quot;choices&quot;&gt;
+            [[P6 C3]]
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;img src=&quot;./summer_chique.jpeg&quot;&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+    .container {
+        display: grid;
+        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    .choices {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .container img {
+        max-width: 100%;
+        max-height: 70vh;
+    }
+&lt;/style&gt;}</tw-passagedata><tw-passagedata pid="8" name="P6 C3" tags="" position="600,725" size="100,100">{&lt;div class=&quot;container&quot;&gt;
+    &lt;div&gt;
+        &lt;p&gt;
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer risus erat, viverra nec pharetra et,
+            viverra eu elit. Vestibulum fringilla fringilla ex et porta. Maecenas facilisis urna metus, at consequat
+            nulla efficitur eget. Nulla eget magna eleifend, mattis nibh in, pharetra est. Donec non commodo lorem.
+            Praesent eu blandit ligula. Maecenas vitae varius felis, nec scelerisque tellus. Mauris vulputate
+            efficitur
+            lectus et pulvinar. Curabitur consequat risus ligula, ac efficitur neque posuere quis. Donec id tortor
+            vulputate, hendrerit neque eu, lobortis felis.
+        &lt;/p&gt;
+
+        &lt;div class=&quot;choices&quot;&gt;
+            [[P7 C3 a]]
+            [[P7 C3 b]]
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;img src=&quot;./summer_chique.jpeg&quot;&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+    .container {
+        display: grid;
+        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    .choices {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .container img {
+        max-width: 100%;
+        max-height: 70vh;
+    }
+&lt;/style&gt;}</tw-passagedata><tw-passagedata pid="9" name="P7 C3 a" tags="" position="525,850" size="100,100">{&lt;div class=&quot;container&quot;&gt;
+    &lt;div&gt;
+        &lt;p&gt;
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer risus erat, viverra nec pharetra et,
+            viverra eu elit. Vestibulum fringilla fringilla ex et porta. Maecenas facilisis urna metus, at consequat
+            nulla efficitur eget. Nulla eget magna eleifend, mattis nibh in, pharetra est. Donec non commodo lorem.
+            Praesent eu blandit ligula. Maecenas vitae varius felis, nec scelerisque tellus. Mauris vulputate
+            efficitur
+            lectus et pulvinar. Curabitur consequat risus ligula, ac efficitur neque posuere quis. Donec id tortor
+            vulputate, hendrerit neque eu, lobortis felis.
+        &lt;/p&gt;
+
+        &lt;div class=&quot;choices&quot;&gt;
+            [[P1]]
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;img src=&quot;./summer_chique.jpeg&quot;&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+    .container {
+        display: grid;
+        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    .choices {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .container img {
+        max-width: 100%;
+        max-height: 70vh;
+    }
+&lt;/style&gt;}</tw-passagedata><tw-passagedata pid="10" name="P7 C3 b" tags="" position="675,850" size="100,100">{&lt;div class=&quot;container&quot;&gt;
+    &lt;div&gt;
+        &lt;p&gt;
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer risus erat, viverra nec pharetra et,
+            viverra eu elit. Vestibulum fringilla fringilla ex et porta. Maecenas facilisis urna metus, at consequat
+            nulla efficitur eget. Nulla eget magna eleifend, mattis nibh in, pharetra est. Donec non commodo lorem.
+            Praesent eu blandit ligula. Maecenas vitae varius felis, nec scelerisque tellus. Mauris vulputate
+            efficitur
+            lectus et pulvinar. Curabitur consequat risus ligula, ac efficitur neque posuere quis. Donec id tortor
+            vulputate, hendrerit neque eu, lobortis felis.
+        &lt;/p&gt;
+
+        &lt;div class=&quot;choices&quot;&gt;
+            [[P1]]
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;img src=&quot;./summer_chique.jpeg&quot;&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+    .container {
+        display: grid;
+        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    .choices {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .container img {
+        max-width: 100%;
+        max-height: 70vh;
+    }
+&lt;/style&gt;}</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim

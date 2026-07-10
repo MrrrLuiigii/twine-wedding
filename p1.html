@@ -14,42 +14,51 @@
             Donec eu ligula dolor. Praesent metus neque, pulvinar ac turpis nec, auctor dapibus odio. Duis volutpat
             pretium magna sit amet fermentum. Aliquam erat volutpat. Vivamus rhoncus nec elit quis ultricies.
             Integer
-            euismod bibendum dui, ac tristique dolor interdum nec. Pellentesque habitant morbi tristique senectus et
-            netus et malesuada fames ac turpis egestas. Nunc dictum ornare quam, nec accumsan justo efficitur sed.
-            Nullam mi elit, sodales ac tempus eget, tincidunt et odio. Aenean imperdiet mauris massa, vitae rhoncus
-            erat
-            condimentum id. Donec nec orci semper nisl gravida feugiat. Quisque mattis magna quis posuere facilisis.
-            Sed
-            nec rutrum nisi. Nunc eu placerat dolor, eleifend volutpat augue.
         </p>
         <p><i>Klik op een bloem om verder te gaan in het verhaal.</i></p>
     </div>
-    <div class="character-grid">
-        <div>(link: '<img src="./flower.webp">')[(goto: "P2 Character 3")]</div>
-        <div>(link: '<img src="./flower.webp">')[(goto: "P2 Character 3")]</div>
-        <div>(link: '<img src="./flower.webp">')[(goto: "P2 Character 3")]</div>
-        <div>(link: '<img src="./flower.webp">')[(goto: "P2 Character 3")]</div>
-        <div>(link: '<img src="./flower.webp">')[(goto: "P2 Character 3")]</div>
+    <div class="carousel">
+        <div class="slide">(link: '<img src="./character.jpg">')[(goto: "P2 Character 3")]</div>
+        <div class="slide">(link: '<img src="./character.jpg">')[(goto: "P2 Character 3")]</div>
+        <div class="slide">(link: '<img src="./character.jpg">')[(goto: "P2 Character 3")]</div>
+        <div class="slide">(link: '<img src="./character.jpg">')[(goto: "P2 Character 3")]</div>
+        <div class="slide">(link: '<img src="./character.jpg">')[(goto: "P2 Character 3")]</div>
     </div>
 </div>
-
 
 <style>
     .container {
         display: grid;
-        grid-template-columns: 60% 40%;
+        grid-template-columns: calc(60% - 5px) calc(40% - 5px);
         gap: 10px;
     }
 
-    .character-grid {
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-auto-rows: 5rem;
-        background-color: dodgerblue;
-        padding: 10px;
+    .carousel {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        width: 100%;
+        scroll-timeline: --carouselTimeline inline;
+        gap: 15px;
+        padding: 0 7.5%;
+        box-sizing: border-box;
     }
 
-    .character-grid img {
-        max-width: 7rem;
+    .carousel::-webkit-scrollbar {
+        display: none;
+    }
+
+    .slide {
+        flex: 0 0 85%;
+        scroll-snap-align: center;
+    }
+
+    .slide img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 8px;
+        filter: drop-shadow(30px 10px 4px #4444dd);
     }
 </style>
