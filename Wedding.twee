@@ -509,9 +509,9 @@ tw-story {
 
 tw-passage {
   background-image: url('./flower_corner.webp');
-  background-repeat: no-repeat, no-repeat;
+  background-repeat: no-repeat;
   background-size: 200px auto; 
-  padding: 50px 0 0 25px;
+  padding: 75px 0 0 50px;
   
   background-clip: border-box; 
   border-left: 75px solid transparent;
@@ -520,18 +520,20 @@ tw-passage {
 }
 
 tw-expression tw-link {
-  background-color: #E1BEE7;
+  background-image: url('./button.svg');
+  background-repeat: no-repeat;
   border: 0 solid #1A365D;
+  border-radius: 15px;
   box-sizing: border-box;
   color: #2C3E50;
   display: flex;
-  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   font-size: 1rem;
   font-weight: 700;
   justify-content: center;
   line-height: 1.75rem;
   padding: .75rem 1.65rem;
   position: relative;
+  font-family: "Dreamy Angel";
   text-align: center;
   text-decoration: none #2C3E50 solid;
   text-decoration-thickness: auto;
@@ -545,22 +547,23 @@ tw-expression tw-link {
   touch-action: manipulation;
 }
 
+tw-expression tw-link.visited {
+  color: #2C3E50 !important;
+}
+
 tw-expression tw-link:hover {
-  color: #6941E1;
+  color: #6941E1 !important;
 }
 
 tw-expression tw-link:focus {
   outline: 0;
 }
 
-tw-expression tw-link:visited {
-  color: #2C3E50;
-}
-
 tw-expression tw-link:after {
   content: '';
   position: absolute;
   border: 1px solid #2C3E50;
+  border-radius: 10px;
   bottom: 4px;
   left: 4px;
   width: calc(100% - 1px);
