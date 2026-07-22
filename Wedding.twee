@@ -7,37 +7,1830 @@ Wedding
   "ifid": "A65E6A26-8673-439B-B216-390041C6895D",
   "format": "Harlowe",
   "format-version": "3.3.9",
-  "start": "P1",
+  "start": "Wie ben jij?",
   "zoom": 1
 }
 
 
-:: P1 {"position":"600,100","size":"100,100"}
-{<h1>Lorem Ipsum</h1>
+:: Bruid {"position":"200,225","size":"100,100"}
+{<div class="container">
+    <div>
+        <h1>Bruid</h1>
+        <i>Jij bent de bruid.</i>
+        <p>
+            Het is de avond voor je grote dag. Morgen is je bruiloft. Je bent samen met je aanstaande
+            man al lang aan het plannen geweest, maar morgen is het eindelijk zover. Na jaren samen
+            te zijn geweest, samen hebben gelachen en samen hebben geleefd, ga je met hem trouwen.
+        </p>
+        <p>
+            Je loopt door de woonkamer te ijsberen, steeds maar nadenken over morgen. Is alles in
+            orde? Heeft de catering de bestelling goed geregeld? Komt de fotograaf op tijd? Wat gaat
+            het weer doen? Je stopt, en ademt diep in. En weer uit. Alles gaat goed komen. Morgen is
+            jouw dag. Morgen is jullie dag. Je kijkt opzij, naar de klok aan de muur. Het is al laat aan het
+            worden, en je wil eigenlijk gaan slapen zodat je goed uitgerust bent voor wat ongetwijfeld
+            een lange dag gaat worden. De aanloop naar de bruiloft is erg vermoeiend geweest, en je
+            begint het zeker te voelen. Aan de andere kant zou het ook fijn zijn om nu alvast wat ontbijt
+            voor te bereiden. Dan hoef je morgenochtend minder te doen, en kan je rustiger met je dag
+            beginnen. Je kan je verschillende noten en zaden alvast in een grote kom verzamelen. Dat
+            scheelt in ieder geval werk in de ochtend, ook met opruimen. Waar kies je voor? Bereid je
+            het ontbijt 's avonds al voor, of regel je dat morgenochtend?
+        </p>
+        <div class="choices">
+            (link: "'s avonds")[(goto: "Bruid 1a")]
+            (link: "morgenochtend")[(goto: "Bruid 1b")]
+        </div>
+    </div>
+    <img src="./summer_chique.jpeg">
+</div>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    .choices {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .container img {
+        max-width: 100%;
+        max-height: 70vh;
+    }
+</style>}
+
+
+:: Bruid 1a {"position":"125,350","size":"100,100"}
+{<div class="container">
+    <div>
+        <p>
+            De volgende ochtend worden jullie wakker. Allebei hebben jullie goed geslapen, en met de
+            voorbereiding die je gisteravond aan het ontbijt hebt gedaan, kunnen jullie van een heerlijk
+            rustige ochtend genieten. Je neemt je ontbijt en gaat buiten zitten, genietend van de frisse
+            ochtendzon.
+        </p>
+
+        <div class="choices">
+            (link: "naar de trouwlocatie")[(goto: "Bruid 2")]
+        </div>
+    </div>
+    <img src="./summer_chique.jpeg">
+</div>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    .choices {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .container img {
+        max-width: 100%;
+        max-height: 70vh;
+    }
+</style>}
+
+
+:: Bruid 1b {"position":"275,350","size":"100,100"}
+{<div class="container">
+    <div>
+        <p>
+            De volgende ochtend worden jullie wakker. Allebei hebben jullie goed geslapen. Doordat je
+            gisteravond op tijd bent gaan slapen voel je je buitengewoon fit en enthousiast. Je maakt je
+            ontbijt even, en neemt het mee naar buiten, genietend van de frisse ochtendzon.
+        </p>
+
+        <div class="choices">
+            (link: "naar de trouwlocatie")[(goto: "Bruid 2")]
+        </div>
+    </div>
+    <img src="./summer_chique.jpeg">
+</div>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    .choices {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .container img {
+        max-width: 100%;
+        max-height: 70vh;
+    }
+</style>}
+
+
+:: Bruid 2 {"position":"200,475","size":"100,100"}
+{{<div class="container">
+    <div>
+        <p>
+            Er moet nog veel gebeuren vandaag, maar je neemt de tijd om van je ochtend te genieten.
+            Wanneer je even omkijkt, zie je in de deuropening je partner staan, en geven jullie elkaar
+            een lieve glimlach. Samen vertrekken jullie naar de trouwlocatie. Onderweg gaan er talloze
+            dingen door je hoofd over de rest van de dag. De reis gaat in een flits voorbij terwijl je zit te
+            piekeren, maar eenmaal aangekomen op de locatie zie je dat iedereen al flink in de weer is.
+            Verschillende mensen zijn hard aan het werk om deze plek om te toveren tot jullie ideale
+            trouwlocatie. Er worden bloemen neergezet en de muziekinstallatie voor de receptie wordt
+            opgebouwd. Een sfeer van anticipatie en enthousiasme hangt in de lucht.
+        </p>
+        <p>
+            Toch zijn er twee mensen die je momenteel niet ziet. De fotograaf is aanwezig, dat is wel
+            duidelijk. Er staan namelijk wat grote lampen bij elkaar in een hoek, maar deze zijn nog niet
+            op de juiste plek gezet of aangesloten. De tijd begint enigszins te dringen, dus misschien
+            kan de fotograaf wat hulp gebruiken. Dan moet je die wel eerst gevonden krijgen… Niet
+            alleen dat, maar de stoelen voor de ceremonie zijn nog niet allemaal opgesteld. Een stuk of
+            twintig stoelen ontbreken nog in de opstelling. De coördinator zou dit allemaal onder controle
+            moeten hebben, maar die zie je ook nergens. Aangezien de ontvangsttijd al snel dichterbij
+            komt, besluit je het heft in eigen hand te nemen en op zoek te gaan naar een van deze
+            mensen. Wie ga je proberen te vinden; de fotograaf, of de coördinator?
+        </p>
+        <div class="choices">
+            (link: "de fotograaf")[(goto: "Bruid 3a")]
+            (link: "de coördinator")[(goto: "Bruid 3b")]
+        </div>
+    </div>
+    <img src="./summer_chique.jpeg">
+</div>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    .choices {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .container img {
+        max-width: 100%;
+        max-height: 70vh;
+    }
+</style>}}
+
+
+:: Bruid 3a {"position":"125,600","size":"100,100"}
+{<div class="container">
+    <div>
+        <p>
+            Je loopt rond over het terrein en kan in eerste instantie de fotograaf niet vinden. Pas
+            wanneer je even naar buiten loopt komt de fotograaf in beeld. Op de parkeerplaats staat hij
+            in de kofferbak van zijn auto gedoken terwijl hij in zichzelf mompelt. Wanneer je naar hem
+            toe loopt, stapt hij snel achteruit. Hij vertelt dat hij nog op zoek was naar de tas met reserve
+            accu's en lenzen voor zijn camera. Gelukkig heeft hij deze zojuist gevonden en kan hij
+            verder met het opstellen van de lampen waar deze het meest nodig zijn. Wat een opluchting!
+        </p>
+
+        <div class="choices">
+            (link: "aanloop naar de ceremonie")[(goto: "Bruid 4")]
+        </div>
+    </div>
+    <img src="./summer_chique.jpeg">
+</div>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    .choices {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .container img {
+        max-width: 100%;
+        max-height: 70vh;
+    }
+</style>}
+
+
+:: Bruid 3b {"position":"275,600","size":"100,100"}
+{<div class="container">
+    <div>
+        <p>
+            Je maakt een rondje over het terrein, zoekend naar de coördinator. Je loopt door de
+            receptiezaal, langs de bar en naar het altaar. Uiteindelijk zie je de coördinator door het
+            kleine raampje in de deur naar de keuken. Je stapt door de deur de keuken in, waar de
+            coördinator wat zaken voor de catering aan het doorspreken is met de chef. Zo te horen is
+            hier ook alles in orde. De coördinator rondt het gesprek af, en loopt met je de keuken weer
+            uit zodat de chef verder kan werken. Jullie halen beiden opgelucht adem dat de catering
+            goed geregeld is, waarna de coördinator weer verder gaat met het opstellen van de stoelen.
+            Gelukkig maar!
+
+        </p>
+
+        <div class="choices">
+            (link: "aanloop naar de ceremonie")[(goto: "Bruid 4")]
+        </div>
+    </div>
+    <img src="./summer_chique.jpeg">
+</div>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    .choices {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .container img {
+        max-width: 100%;
+        max-height: 70vh;
+    }
+</style>}
+
+
+:: Bruid 4 {"position":"200,725","size":"100,100"}
+{{<div class="container">
+    <div>
+        <p>
+            Nu alle voorbereidingen zo goed als afgerond zijn is het bijna zover. De hele trouwlocatie is
+            precies zo ingericht als de bruidegom en jij samen hadden bedacht. De fotograaf staat klaar,
+            de eerste gasten komen langzaam binnen druppelen, de muziek klinkt al door de hal. Je
+            bent je nog even achter de schermen mentaal aan het voorbereiden. Het moment waar je al
+            zo lang op hebt gewacht en al zo lang naartoe aan het werken bent is bijna daar. De
+            bloemen staan waar ze horen en het rumoer van gesprekken klinkt overal.
+        </p>
+        <p>
+            Er zijn nog zo'n 20 minuten te gaan voordat de ceremonie begint. Je kijkt in de spiegel,
+            ademt diep in en daarna langzaam uit. Je bent er klaar voor. Alleen nog een keer je geloften
+            doornemen zodat je ze zeker goed kan vertellen… Wacht, waar is het briefje met je geloften
+            gebleven? De laatste keer zat het nog in je tas, maar nu gooi je hem helemaal leeg en is het
+            nergens te bekennen. Misschien is het eruit gevallen terwijl je eerder over het terrein liep?
+            Je hebt nog even de tijd, dus je kan het briefje nog gaan zoeken. Wellicht vind je het ergens,
+            maar wellicht ook niet. Je wilt ook niet riskeren dat je straks te laat komt voor je eigen
+            bruiloft. De meeste tekst heb je nog onthouden, maar als je de exacte tekst niet hebt gaan
+            sommige delen wat improvisatie nodig hebben. Je hebt nog één last-minute beslissing te
+            maken: ga je op zoek naar je geloften, of ga je zonder papiertje naar de ceremonie en
+            improviseer je?
+        </p>
+        <div class="choices">
+            (link: "zoek je geloften")[(goto: "Bruid 5a")]
+            (link: "improviseer")[(goto: "Bruid 5a")]
+        </div>
+    </div>
+    <img src="./summer_chique.jpeg">
+</div>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    .choices {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .container img {
+        max-width: 100%;
+        max-height: 70vh;
+    }
+</style>}}
+
+
+:: Bruid 5a {"position":"125,850","size":"100,100"}
+{<div class="container">
+    <div>
+        <p>
+DEZE ONTBREEKT NOG
+        </p>
+
+        <div class="choices">
+            (link: "herstart")[(restart:)]
+        </div>
+    </div>
+    <img src="./summer_chique.jpeg">
+</div>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    .choices {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .container img {
+        max-width: 100%;
+        max-height: 70vh;
+    }
+</style>}
+
+
+:: Bruid 5b {"position":"275,850","size":"100,100"}
+{<div class="container">
+    <div>
+        <p>
+DEZE ONTBREEKT NOG
+        </p>
+
+        <div class="choices">
+            (link: "herstart")[(restart:)]
+        </div>
+    </div>
+    <img src="./summer_chique.jpeg">
+</div>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    .choices {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .container img {
+        max-width: 100%;
+        max-height: 70vh;
+    }
+</style>}
+
+
+:: Bruidegom {"position":"500,225","size":"100,100"}
+{<div class="container">
+    <div>
+        <h1>Bruidegom</h1>
+        <i>Jij bent de bruidegom.</i>
+        <p>
+            Het is de dag voor je bruiloft. Je bent samen met je aanstaande vrouw al lang aan het
+            plannen geweest, maar morgen is het eindelijk zover. Na jaren samen te zijn geweest,
+            samen hebben gelachen en samen hebben geleefd, ga je met haar trouwen.
+
+        </p>
+        <p>
+            Maar dat is morgen. Vandaag is er nog van alles te doen, nog van alles voor te bereiden. Je
+            hebt best wat mensen ingeschakeld om te helpen. De catering arriveert morgenochtend al
+            vroeg. Je hebt zonet nog de fotograaf gesproken aan de telefoon, daar loopt ook alles
+            volgens plan. Het is nog ochtend, dus je hebt de hele dag nog om de laatste zaken te
+            regelen. Tientallen zaken spelen door je hoofd waarvan je je afvraagt of het allemaal goed
+            komt. Waarschijnlijk zou je hulp op de trouwlocatie zeker van pas komen. Dan kan je alles
+            daar in goede banen leiden en loopt de voorbereiding vandaag sneller. Je kijkt uit het raam
+            naar het mooie weer, en neemt toch even een klein momentje rust. Eerst ontbijten, daarna
+            zien we wel. Op een lege maag kan niemand een bruiloft regelen. Terwijl je zit te eten schiet
+            je ineens te binnen: je pak ligt nog bij de stomerij en moet nog worden opgehaald! Dit moet
+            vandaag gebeuren, maar als je ook nog op de locatie wil gaan helpen is daar weinig tijd voor
+            over. De stomerij is namelijk niet bepaald dichtbij. Misschien kan iemand anders het pak nog
+            ophalen, maar dat is nog niet zeker. Wat ga je doen? Ga je naar de trouwlocatie om daar te
+            helpen en probeer je iemand anders je pak op te laten halen? Of haal je je pak zelf op, wat
+            veel minder tijd op de locatie betekent?
+        </p>
+        <div class="choices">
+            (link: "naar de trouwlocatie")[(goto: "Bruidegom 1a")]
+            (link: "pak ophalen")[(goto: "Bruidegom 1b")]
+        </div>
+    </div>
+    <img src="./summer_chique.jpeg">
+</div>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    .choices {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .container img {
+        max-width: 100%;
+        max-height: 70vh;
+    }
+</style>}
+
+
+:: Bruidegom 1a {"position":"425,350","size":"100,100"}
+{<div class="container">
+    <div>
+        <p>
+            Je stapt in de auto en rijdt direct naar de trouwlocatie. Onderweg ben je aan het bellen met
+            vrienden en familie in de hoop dat iemand vandaag nog tijd heeft om de stomerij te
+            bezoeken. Eenmaal aangekomen op de locatie wordt er al driftig versierd. Verschillende
+            mensen zijn druk in de weer om het hier mooi aan te kleden. Nu jij ook aanwezig bent,
+            dirigeer je het personeel de juiste richting op. Je wijst aan waar de receptietafels komen, en
+            spot ook wat verkeerde tafelkleden die niet helemaal in het thema passen. Na een
+            opmerking worden die kleden vervangen, gelukkig maar. Dan krijg je een bericht op je
+            telefoon: een foto van iemand bij de stomerij, met jouw pak in hand! Wat een meevaller!
+
+        </p>
+        <div class="choices">
+            (link: "aanloop naar de trouwdag")[(goto: "Bruidegom 2")]
+        </div>
+    </div>
+    <img src="./summer_chique.jpeg">
+</div>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    .choices {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .container img {
+        max-width: 100%;
+        max-height: 70vh;
+    }
+</style>}
+
+
+:: Bruidegom 1b {"position":"575,350","size":"100,100"}
+{<div class="container">
+    <div>
+        <p>
+            Je stapt in de auto en rijdt naar de stomerij. Het is best een stukje rijden naar deze zaak,
+            maar het geld dat je hebt bespaard door deze stomerij te kiezen maakt het de rit waard.
+            Onderweg, gestopt bij een stoplicht, denk je aan de trouwlocatie. Zouden ze de juiste
+            kleuren tafelkleed gebruiken? Als ze er toch naast zitten zou iemand er iets van moeten
+            zeggen, en daar wil je natuurlijk wel zo snel mogelijk bij zijn. Komen de decoraties wel op de
+            goede plek? Een luide toeter van de auto achter je doet je opschrikken uit je gedachten, en
+            je rijdt verder. Het zal allemaal wel goed komen. De mensen daar zijn professionals, en jullie
+            hebben duidelijke instructies geleverd. Eenmaal aangekomen bij de stomerij heb je al snel je
+            pak in handen, helemaal fris en klaar voor de grote dag morgen. Het voelt alsof er een
+            gewicht van je schouders valt. Wat fijn!
+
+        </p>
+        <div class="choices">
+            (link: "aanloop naar de trouwdag")[(goto: "Bruidegom 2")]
+        </div>
+    </div>
+    <img src="./summer_chique.jpeg">
+</div>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    .choices {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .container img {
+        max-width: 100%;
+        max-height: 70vh;
+    }
+</style>}
+
+
+:: Bruidegom 2 {"position":"500,475","size":"100,100"}
+{<div class="container">
+    <div>
+        <p>
+            Die avond zit je nog gezellig te praten over de dag met je aanstaande vrouw. Jullie hebben
+            er allebei veel zin in, maar de spanning is zeker ook aanwezig. Na een lange dag besluiten
+            jullie op tijd te gaan slapen. Goed uitrusten voor wat ongetwijfeld een intensieve dag gaat
+            worden is erg belangrijk. De volgende ochtend word je wakker door een zonnestraal die
+            door het gordijn schijnt. Je geeft je partner een zoen en staat op. Ook vandaag moet er nog
+            veel gebeuren. Hoe voel je je? Ben je goed uitgerust en neem je een lekker ontbijt, of ben je
+            te gestresst en krijg je amper twee happen van een cracker weg?
+        </p>
+        <div class="choices">
+            (link: "goed uitgerust")[(goto: "Bruidegom 3a")]
+            (link: "gestresst")[(goto: "Bruidegom 3b")]
+        </div>
+    </div>
+    <img src="./summer_chique.jpeg">
+</div>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    .choices {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .container img {
+        max-width: 100%;
+        max-height: 70vh;
+    }
+</style>}
+
+
+:: Bruidegom 3a {"position":"425,600","size":"100,100"}
+{<div class="container">
+    <div>
+        <p>
+            Toen je wakker werd voelde je je goed. Uitgerust. Klaar voor de dag. Je neemt even de tijd
+            om te ontspannen en te genieten van de frisse ochtendzon. In de keuken maak je een
+            simpel ontbijt. Wanneer je in de deuropening staat zie je je partner buiten aan haar eigen
+            ontbijtje zitten. Ze kijkt om, en jullie geven elkaar een lieve glimlach. Vandaag is de dag.
+            Vandaag is jullie dag. Je loopt naar buiten, gaat naast je partner zitten, en geniet van een
+            heerlijke ochtend. Er staat vandaag nog ruim voldoende te gebeuren.
+        </p>
+        <div class="choices">
+            (link: "de laatste voorbereidingen")[(goto: "Bruidegom 4")]
+        </div>
+    </div>
+    <img src="./summer_chique.jpeg">
+</div>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    .choices {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .container img {
+        max-width: 100%;
+        max-height: 70vh;
+    }
+</style>}
+
+
+:: Bruidegom 3b {"position":"575,600","size":"100,100"}
+{<div class="container">
+    <div>
+        <p>
+            Zodra je vanochtend opstond was je alweer volledig in 'regelmodus'. Ondanks de rustige
+            avond gisteren kan je nu alleen maar denken aan de zaken die vandaag nog moeten
+            gebeuren. Je loopt naar de badkamer om even wat water in je gezicht te gooien zodat je
+            volledig wakker bent. Wanneer je weer omhoog komt en in de spiegel kijkt, zie je je partner
+            achter je staan. Je draait om en kijkt haar even recht aan, wat je gedachten al snel kalmeert.
+            Jullie geven elkaar een lieve glimlach. Vandaag is de dag. Vandaag is jullie dag. Met die
+            glimlach nog steeds op je gezicht kleed je je aan en bereid je je voor op de rest van de dag.
+        </p>
+        <div class="choices">
+            (link: "de laatste voorbereidingen")[(goto: "Bruidegom 4")]
+        </div>
+    </div>
+    <img src="./summer_chique.jpeg">
+</div>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    .choices {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .container img {
+        max-width: 100%;
+        max-height: 70vh;
+    }
+</style>}
+
+
+:: Bruidegom 4 {"position":"500,725","size":"100,100"}
+{<div class="container">
+    <div>
+        <p>
+            Na allebei goed wakker geworden te zijn is het tijd om te vertrekken naar de trouwlocatie.
+            Samen stappen jullie in de auto om daar naartoe te rijden. Je pak heb je nog niet aan, dat
+            ligt nog mooi in de hoes achterin. Straks moet er nog steeds veel gebeuren, maar nu kunnen
+            jullie dat samen gaan regelen. Terwijl je gedachten afdwalen naar de rest van de dag gaat
+            de rit in een flits voorbij. Eenmaal aangekomen op de trouwlocatie vallen er al snel een
+            aantal zorgen van je af. Je ziet dat de fotograaf al bezig is met zijn opstelling, de tafelkleden
+            hebben de juiste kleur, en bijna alle bloemen staan al waar ze moeten staan. Een echte
+            opluchting.
+        </p>
+        <p>
+            De rest van de ochtend besteed je aan helpen waar het nog nodig is. Je loopt het hele
+            terrein over, tot je een klok ziet hangen. Het is al bijna zo ver, dus het is tijd om jezelf om te
+            kleden. Je draait je snel weer om en haast je naar je kleedkamer. Hier hangt je pak, nog
+            steeds netjes in de hoes met het logo van de stomerij erop. De zenuwen waren wat
+            onderdrukt door het werk dat je vanochtend nog hebt gedaan, maar nu je in je kleedkamer
+            staat voel je je toch wat nerveus. Met een zucht ga je op de kruk voor de spiegel zitten en
+            pak je het briefje met je geschreven geloften. Je leest het nog eens goed door, stopt het
+            zorgvuldig in je broekzak, en loopt naar de bar om iets te drinken. Er zijn al mensen aan het
+            arriveren voor de ceremonie. Je hart bonst in je keel, maar je hebt er ook enorm zin in. Niet
+            lang meer nu, en dan zullen jullie de ringen aan elkaar overhandigen. De ringen die in je
+            broekzak zitten.
+        </p>
+        <p>
+            Wacht… Je voelt aan je broekzak, maar je vindt alleen het stukje papier. Zouden de ringen
+            niet in je broekzak moeten zitten? Oh nee, waar is het doosje met de ringen? Je hebt
+            vandaag al op zoveel plekken gelopen, waar heb je het in hemelsnaam gelaten? Misschien
+            in de kleedkamer? Daar was je best afgeleid, dus je kan het zijn vergeten. Of had je het
+            doosje alvast bij het altaar neergezet? Dan staat het alvast waar je het nodig hebt. Alle
+            gasten zijn er al, dus je hebt weinig tijd. Waar ga je zoeken? In de kleedkamer, of bij het
+            altaar?
+        </p>
+        <div class="choices">
+            (link: "in de kleedkamer")[(goto: "Bruidegom 5a")]
+            (link: "bij het altaar")[(goto: "Bruidegom 5b")]
+        </div>
+    </div>
+    <img src="./summer_chique.jpeg">
+</div>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    .choices {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .container img {
+        max-width: 100%;
+        max-height: 70vh;
+    }
+</style>}
+
+
+:: Bruidegom 5a {"position":"425,850","size":"100,100"}
+{<div class="container">
+    <div>
+        <p>
+DEZE ONTBREEKT NOG
+        </p>
+
+        <div class="choices">
+            (link: "herstart")[(restart:)]
+        </div>
+    </div>
+    <img src="./summer_chique.jpeg">
+</div>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    .choices {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .container img {
+        max-width: 100%;
+        max-height: 70vh;
+    }
+</style>}
+
+
+:: Bruidegom 5b {"position":"575,850","size":"100,100"}
+{<div class="container">
+    <div>
+        <p>
+DEZE ONTBREEKT NOG
+        </p>
+
+        <div class="choices">
+            (link: "herstart")[(restart:)]
+        </div>
+    </div>
+    <img src="./summer_chique.jpeg">
+</div>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    .choices {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .container img {
+        max-width: 100%;
+        max-height: 70vh;
+    }
+</style>}
+
+
+:: Feestganger {"position":"1100,225","size":"100,100"}
+{<div class="container">
+    <div>
+        <h1>Feestganger</h1>
+        <i>Jij bent de feestganger.</i>
+        <p>
+DEZE ONTBREEKT NOG
+        </p>
+        <div class="choices">
+            (link: "...")[(goto: "Feestganger 1a")]
+            (link: "...")[(goto: "Feestganger 1b")]
+        </div>
+    </div>
+    <img src="./summer_chique.jpeg">
+</div>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    .choices {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .container img {
+        max-width: 100%;
+        max-height: 70vh;
+    }
+</style>}
+
+
+:: Feestganger 1a {"position":"1025,350","size":"100,100"}
+{<div class="container">
+    <div>
+        <p>
+DEZE ONTBREEKT NOG
+        </p>
+        <div class="choices">
+            (link: "...")[(goto: "Feestganger 2")]
+        </div>
+    </div>
+    <img src="./summer_chique.jpeg">
+</div>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    .choices {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .container img {
+        max-width: 100%;
+        max-height: 70vh;
+    }
+</style>}
+
+
+:: Feestganger 1b {"position":"1175,350","size":"100,100"}
+{<div class="container">
+    <div>
+        <p>
+DEZE ONTBREEKT NOG
+        </p>
+        <div class="choices">
+            (link: "...")[(goto: "Feestganger 2")]
+        </div>
+    </div>
+    <img src="./summer_chique.jpeg">
+</div>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    .choices {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .container img {
+        max-width: 100%;
+        max-height: 70vh;
+    }
+</style>}
+
+
+:: Feestganger 2 {"position":"1100,475","size":"100,100"}
+{<div class="container">
+    <div>
+        <p>
+DEZE ONTBREEKT NOG
+        </p>
+        <div class="choices">
+            (link: "...")[(goto: "Feestganger 3a")]
+            (link: "...")[(goto: "Feestganger 3b")]
+        </div>
+    </div>
+    <img src="./summer_chique.jpeg">
+</div>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    .choices {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .container img {
+        max-width: 100%;
+        max-height: 70vh;
+    }
+</style>}
+
+
+:: Feestganger 3a {"position":"1025,600","size":"100,100"}
+{<div class="container">
+    <div>
+        <p>
+DEZE ONTBREEKT NOG
+        </p>
+        <div class="choices">
+            (link: "...")[(goto: "Feestganger 4")]
+        </div>
+    </div>
+    <img src="./summer_chique.jpeg">
+</div>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    .choices {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .container img {
+        max-width: 100%;
+        max-height: 70vh;
+    }
+</style>}
+
+
+:: Feestganger 3b {"position":"1175,600","size":"100,100"}
+{<div class="container">
+    <div>
+        <p>
+DEZE ONTBREEKT NOG
+        </p>
+        <div class="choices">
+            (link: "...")[(goto: "Feestganger 4")]
+        </div>
+    </div>
+    <img src="./summer_chique.jpeg">
+</div>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    .choices {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .container img {
+        max-width: 100%;
+        max-height: 70vh;
+    }
+</style>}
+
+
+:: Feestganger 4 {"position":"1100,725","size":"100,100"}
+{<div class="container">
+    <div>
+        <p>
+DEZE ONTBREEKT NOG
+        </p>
+        <div class="choices">
+            (link: "...")[(goto: "Feestganger 5a")]
+            (link: "...")[(goto: "Feestganger 5b")]
+        </div>
+    </div>
+    <img src="./summer_chique.jpeg">
+</div>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    .choices {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .container img {
+        max-width: 100%;
+        max-height: 70vh;
+    }
+</style>}
+
+
+:: Feestganger 5a {"position":"1025,850","size":"100,100"}
+{<div class="container">
+    <div>
+        <p>
+DEZE ONTBREEKT NOG
+        </p>
+
+        <div class="choices">
+            (link: "herstart")[(restart:)]
+        </div>
+    </div>
+    <img src="./summer_chique.jpeg">
+</div>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    .choices {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .container img {
+        max-width: 100%;
+        max-height: 70vh;
+    }
+</style>}
+
+
+:: Feestganger 5b {"position":"1175,850","size":"100,100"}
+{<div class="container">
+    <div>
+        <p>
+DEZE ONTBREEKT NOG
+        </p>
+
+        <div class="choices">
+            (link: "herstart")[(restart:)]
+        </div>
+    </div>
+    <img src="./summer_chique.jpeg">
+</div>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    .choices {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .container img {
+        max-width: 100%;
+        max-height: 70vh;
+    }
+</style>}
+
+
+:: Fotograaf {"position":"1400,225","size":"100,100"}
+{<div class="container">
+    <div>
+        <h1>Fotograaf</h1>
+        <i>Jij bent de fotograaf.</i>
+        <p>
+            Het vastleggen van je omgeving was altijd al je passie. Na veel oefenen met fotografie
+            tijdens wandelingen, vakanties, en fietstochtjes heb je een heel goed inzicht ontwikkeld voor
+            het maken van mooie plaatjes. Een echte camera kampioen, met een klein arsenaal aan
+            verschillende lenzen, statieven en lampen. Het is een hele investering geweest, maar nu
+            werk je succesvol als freelance fotograaf!
+        </p>
+        <p>
+            Je nieuwste opdracht is voor een bruiloft. Voor deze belangrijke dag in het leven van de
+            bruid en bruidegom willen ze graag een uitgebreide fotoreportage, en ze hebben jou gebeld
+            om dit voor hen te doen! Een beetje nerveus word je er wel van, want dit is een hele grote
+            klus. Het is dus belangrijk dat je je goed voorbereidt. Een goede voorbereiding is het halve
+            werk, toch?
+        </p>
+        <p>
+            Je bent je spullen aan het inpakken voor de bruiloft. Je auto zit al aardig vol en je hebt de
+            belangrijkste dingen al gepakt, maar je hebt nog een keuze te maken. De locatie waar de
+            ceremonie wordt gehouden kan vrij donker zijn vanwege de bomen die eromheen staan. Dat
+            niet alleen, maar het zou misschien bewolkt kunnen worden, wat nog meer licht weghaalt. Je
+            kan extra lampen meenemen zodat dit zeker geen probleem gaat zijn. Dat kost echter wel
+            een stuk meer tijd om op te zetten, én je kan niet zo makkelijk rond bewegen tussen de
+            mensen.
+            Pak je extra lampen in, of ga je liever met een lichtere bepakking op pad?
+        </p>
+        <div class="choices">
+            (link: "extra lampen")[(goto: "Fotograaf 1a")]
+            (link: "lichter bepakt")[(goto: "Fotograaf 1b")]
+        </div>
+    </div>
+    <img src="./summer_chique.jpeg">
+</div>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    .choices {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .container img {
+        max-width: 100%;
+        max-height: 70vh;
+    }
+</style>}
+
+
+:: Fotograaf 1a {"position":"1325,350","size":"100,100"}
+{<div class="container">
+    <div>
+        <p>
+            Aangekomen op de locatie van de bruiloft begin je met het opzetten van je spullen. Twee
+            koffertjes met verschillende lenzen. Reserve accu's voor je camera, een reserve camera,
+            reserve accu's voor je reserve camera. Een statief voor binnen, en een apart statief voor
+            buiten (met scherpe pootjes zodat hij in het gras blijft staan). Het zweet staat al op je
+            voorhoofd; dit is hard werken.
+        </p>
+        <p>
+            En dan moet je al die extra lampen ook nog klaar gaan zetten, een goede plek zoeken,
+            kabels naar stopcontacten leggen, en alle lampen een paar keer testen. Het is wel een groot
+            gedoe allemaal, maar de ruimte binnen is in ieder geval heel mooi verlicht nu. Dit gaat zeker
+            goede foto's opleveren!
+        </p>
+        <div class="choices">
+            (link: "fotostrategie")[(goto: "Fotograaf 2")]
+        </div>
+    </div>
+    <img src="./summer_chique.jpeg">
+</div>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    .choices {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .container img {
+        max-width: 100%;
+        max-height: 70vh;
+    }
+</style>}
+
+
+:: Fotograaf 1b {"position":"1475,350","size":"100,100"}
+{<div class="container">
+    <div>
+        <p>
+            Aangekomen op de locatie van de bruiloft begin je met het opzetten van je spullen. Twee
+            koffertjes met verschillende lenzen. Reserve accu's voor je camera, een reserve camera,
+            reserve accu's voor je reserve camera. Een statief voor binnen, en een apart statief voor
+            buiten (met scherpe pootjes zodat hij in het gras blijft staan). Het zweet staat al op je
+            voorhoofd; dit is hard werken.
+        </p>
+        <p>
+            Met je lichte bepakking duurt het in ieder geval niet al te lang. De belangrijkste zaken zijn nu
+            in orde, en je bent klaar om foto's te maken. Nu alleen nog wachten tot de feestelijkheden
+            van start gaan. De binnenruimte is wel wat aan de donkere kant, maar jouw oog voor
+            compositie heeft al een aantal plekjes gespot waar toch nog genoeg lichtinval is. Dat is top!
+        </p>
+        <div class="choices">
+            (link: "fotostrategie")[(goto: "Fotograaf 2")]
+        </div>
+    </div>
+    <img src="./summer_chique.jpeg">
+</div>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    .choices {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .container img {
+        max-width: 100%;
+        max-height: 70vh;
+    }
+</style>}
+
+
+:: Fotograaf 2 {"position":"1400,475","size":"100,100"}
+{<div class="container">
+    <div>
+        <p>
+            Dan is er nu alleen nog de vraag hoe je de foto's aan gaat pakken. Je zou je onder de
+            gasten kunnen begeven, om op die manier zo veel mogelijk leuke, spontane momenten vast
+            te leggen. Dat geeft een hele kleurrijke, veelzijdige reportage, waar het bruidspaar nog lang
+            van kan genieten. Je zou ook een plekje kunnen inrichten waar zowel het bruidspaar als de
+            gasten naartoe kunnen gaan, om daar onder perfecte omstandigheden geposeerd te worden
+            door jou. Buiten zag je een geweldige plek, die echt ideaal zou zijn hiervoor. Het zou alleen
+            wel kunnen dat de foto's er dan minder gevarieerd uitzien. Wat ga je doen: ga je geposeerde
+            foto's maken, of begeef je je onder de mensen en ga je voor spontaniteit?
+        </p>
+        <div class="choices">
+            (link: "geposeerde foto's")[(goto: "Fotograaf 3a")]
+            (link: "spontaniteit")[(goto: "Fotograaf 3b")]
+        </div>
+    </div>
+    <img src="./summer_chique.jpeg">
+</div>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    .choices {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .container img {
+        max-width: 100%;
+        max-height: 70vh;
+    }
+</style>}
+
+
+:: Fotograaf 3a {"position":"1325,600","size":"100,100"}
+{<div class="container">
+    <div>
+        <p>
+DEZE ONTBREEKT NOG
+        </p>
+        <div class="choices">
+            (link: "laat het feest maar losbarsten")[(goto: "Fotograaf 4")]
+        </div>
+    </div>
+    <img src="./summer_chique.jpeg">
+</div>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    .choices {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .container img {
+        max-width: 100%;
+        max-height: 70vh;
+    }
+</style>}
+
+
+:: Fotograaf 3b {"position":"1475,600","size":"100,100"}
+{<div class="container">
+    <div>
+        <p>
+DEZE ONTBREEKT NOG
+        </p>
+        <div class="choices">
+            (link: "laat het feest maar losbarsten")[(goto: "Fotograaf 4")]
+        </div>
+    </div>
+    <img src="./summer_chique.jpeg">
+</div>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    .choices {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .container img {
+        max-width: 100%;
+        max-height: 70vh;
+    }
+</style>}
+
+
+:: Fotograaf 4 {"position":"1400,725","size":"100,100"}
+{<div class="container">
+    <div>
+        <p>
+            Een tijdje later, na de foto's van de ceremonie (waar ook jij een traantje van geluk niet tegen
+            kon houden), is het tijd om weer hard aan het werk te gaan. Het feest is los gebarsten, en de
+            mooie plaatjes zijn echt overal te vinden. Het bruidspaar danst erop los, er staan genoeg
+            gasten te bewegen op de muziek, en nog een aantal gasten zit gezellig met elkaar te
+            kletsen. Ook de bar is druk bezig om iedereen van een drankje te voorzien. Je bent al best
+            lang bezig met foto's maken, en het is pas wanneer de barman vraagt of je ook wat wilt
+            drinken, dat je beseft hoeveel dorst je hebt. Je bent gewoon aan het werk, dus het is wel zo
+            verstandig om een cola of glas water te bestellen, want alcohol onder werktijd is niet de
+            bedoeling. Maar ze hebben hier ook je favoriete cocktail, en de bar is toch open. Wat kan
+            één drankje nu kwaad? Wat doe je: bestel je een cocktail, of bestel je een glas frisdrank of
+            water?
+        </p>
+        <div class="choices">
+            (link: "je favoriete cocktail")[(goto: "Fotograaf 5a")]
+            (link: "frisdrank of water")[(goto: "Fotograaf 5b")]
+        </div>
+    </div>
+    <img src="./summer_chique.jpeg">
+</div>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    .choices {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .container img {
+        max-width: 100%;
+        max-height: 70vh;
+    }
+</style>}
+
+
+:: Fotograaf 5a {"position":"1325,850","size":"100,100"}
+{<div class="container">
+    <div>
+        <p>
+DEZE ONTBREEKT NOG
+        </p>
+
+        <div class="choices">
+            (link: "herstart")[(restart:)]
+        </div>
+    </div>
+    <img src="./summer_chique.jpeg">
+</div>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    .choices {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .container img {
+        max-width: 100%;
+        max-height: 70vh;
+    }
+</style>}
+
+
+:: Fotograaf 5b {"position":"1475,850","size":"100,100"}
+{<div class="container">
+    <div>
+        <p>
+DEZE ONTBREEKT NOG
+        </p>
+
+        <div class="choices">
+            (link: "herstart")[(restart:)]
+        </div>
+    </div>
+    <img src="./summer_chique.jpeg">
+</div>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    .choices {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .container img {
+        max-width: 100%;
+        max-height: 70vh;
+    }
+</style>}
+
+
+:: Kletskop {"position":"800,225","size":"100,100"}
+{<div class="container">
+    <div>
+        <h1>Kletskop</h1>
+        <i>Jij bent de kletskop.</i>
+        <p>
+            Het is de dag van de bruiloft. Je staat op, pakt je beste outfit uit de kast voor straks, en gaat
+            rustig ontbijten. Het cadeautje heb je al helemaal klaar staan; mooi ingepakt, met een leuk
+            kaartje erbij. De ochtend verloopt heerlijk rustig, en je kijkt uit naar de ceremonie en de
+            receptie. Er zijn toch altijd weer mensen daar aanwezig die je al even niet hebt gezien, en
+            even bijpraten is toch elke keer gezellig. Verhalen over vakanties, problemen op werk, en
+            over het bruidspaar zullen ongetwijfeld veel aan bod komen.
+        </p>
+        <p>
+            Later op de ochtend bedenk je je iets belangrijks. Een goede vriend van je, die ook is
+            uitgenodigd, was gisteravond bij een feestje. Die vriend kennende heeft deze het
+            waarschijnlijk iets te bont gemaakt, en ligt deze misschien nu nog met een kater in bed. Het
+            bruidspaar zou het vervelend vinden als deze vriend niet zou komen. Stuur je je vriend even
+            een berichtje om deze te herinneren aan de bruiloft die over twee uur begint? Of denk je dat
+            je vriend dit wel onder controle heeft, en vertrek je gewoon richting de trouwlocatie?
+        </p>
+        <div class="choices">
+            (link: "stuur een herinnering")[(goto: "Kletskop 1a")]
+            (link: "ga naar de trouwlocatie")[(goto: "Kletskop 1b")]
+        </div>
+    </div>
+    <img src="./summer_chique.jpeg">
+</div>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    .choices {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .container img {
+        max-width: 100%;
+        max-height: 70vh;
+    }
+</style>}
+
+
+:: Kletskop 1a {"position":"725,350","size":"100,100"}
+{<div class="container">
+    <div>
+        <p>
+            Je zucht even, en je gedachten gaan naar je vriend. Hij zal het toch wel in de gaten hebben?
+            Deze bruiloft staat al erg lang op de agenda, dus hij heeft er vast wel rekening mee
+            gehouden. Aan de andere kant, hij heeft wel de reputatie dat hij te laat komt. Een belletje zal
+            in ieder geval garanderen dat hij aan de bruiloft wordt herinnerd. Dan heb je in ieder geval je
+            best gedaan, en ligt het niet aan jou als hij toch te laat komt. Je pakt je telefoon, zoekt zijn
+            contact op, en wacht tot de telefoon over gaat. Tot je verbazing wordt er opgenomen! Aan
+            de andere kant van de lijn klinkt de stem van je vriend laag en zwaar, wat aangeeft dat hij
+            net wakker is. Het gesprek gaat al snel over het feest waar hij gisteravond was. Voor je het
+            weet ben je een half uur verder. Uiteindelijk wijs je hem op de bruiloft waar je over niet al te
+            veel tijd naartoe vertrekt. Hij reageert geschrokken; hij was het dus toch vergeten. Maar
+            goed dat je er nog aan dacht om te bellen!
+        </p>
+        <div class="choices">
+            (link: "op naar de bruiloft")[(goto: "Kletskop 2")]
+        </div>
+    </div>
+    <img src="./summer_chique.jpeg">
+</div>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    .choices {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .container img {
+        max-width: 100%;
+        max-height: 70vh;
+    }
+</style>}
+
+
+:: Kletskop 1b {"position":"875,350","size":"100,100"}
+{<div class="container">
+    <div>
+        <p>
+            Je zucht even, en je gedachten gaan naar je vriend. Hij zal het toch wel in de gaten hebben?
+            Deze bruiloft staat al erg lang op de agenda, dus hij heeft er vast wel rekening mee
+            gehouden. Aan de andere kant, hij heeft wel de reputatie dat hij te laat komt. Maar goed, het
+            is natuurlijk zijn eigen verantwoordelijkheid om op tijd te komen. Je denkt aan een eerdere
+            keer dat deze situatie zich voordeed. Toen kwam ook alles goed, ook al was hij wat later dan
+            de meeste anderen. Met een gerust hart leg je je telefoon weer weg, en ga je verder met je
+            ochtend.
+        </p>
+        <div class="choices">
+            (link: "op naar de bruiloft")[(goto: "Kletskop 2")]
+        </div>
+    </div>
+    <img src="./summer_chique.jpeg">
+</div>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    .choices {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .container img {
+        max-width: 100%;
+        max-height: 70vh;
+    }
+</style>}
+
+
+:: Kletskop 2 {"position":"800,475","size":"100,100"}
+{<div class="container">
+    <div>
+        <p>
+            Dat is achter de rug. Er is nog even tijd om rustig wat te drinken voor je vertrekt naar de
+            locatie. Straks zullen er wel meer dan genoeg gesprekken zijn om te voeren, dus een beetje
+            rust nemen van tevoren is zeker welkom. Je gaat buiten zitten, genietend van een drankje
+            en van de ochtendzon. Het weer zou vandaag net zo heerlijk blijven. Al snel gaat er een uur
+            voorbij. Je kijkt op je klok, en besluit om je toch maar klaar te gaan maken voor vertrek.
+            Gelukkig heb je je outfit ruim van tevoren klaargelegd. Je kleedt je om en zorgt dat je
+            helemaal gereed bent voor vertrek. Tijd om naar de bruiloft te gaan!
+        </p>
+        <p>
+            Eenmaal aangekomen op de trouwlocatie zie je al andere gasten die zijn gearriveerd. Een
+            aantal heb je al lang niet gesproken of gezien. Dit gaat bijna een reünie worden! Je bent dat
+            ook nog niet eens binnen, of je wordt al aangesproken door een vriendin van je. Samen
+            lopen jullie naar binnen, en praten jullie wat bij. Een bruiloft als deze blijft toch een heel
+            sociaal evenement. Jullie gaan staan bij een tafel die alvast is gedekt voor de receptie. Hier
+            barst het gesprek pas echt los. Terwijl jullie het gezellig hebben, begint het echter druk te
+            worden. Misschien is het een goed idee om het gesprek nu te stoppen en alvast een plaats
+            te nemen bij de ceremonie? Dan weet je zeker dat je een mooie plek te pakken hebt. Of je
+            kan natuurlijk gewoon doorpraten, en daarna zien waar je gaat zitten. Er zijn namelijk toch
+            genoeg stoelen voor alle gasten. Wat doe je? Ga je een plek reserveren, of praat je nog
+            gezellig door?
+        </p>
+        <div class="choices">
+            (link: "plek reserveren")[(goto: "Kletskop 3a")]
+            (link: "doorpraten")[(goto: "Kletskop 3b")]
+        </div>
+    </div>
+    <img src="./summer_chique.jpeg">
+</div>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    .choices {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .container img {
+        max-width: 100%;
+        max-height: 70vh;
+    }
+</style>}
+
+
+:: Kletskop 3a {"position":"725,600","size":"100,100"}
+{<div class="container">
+    <div>
+        <p>
+            Je wil de ceremonie wel goed kunnen zien. Daarom besluit je om even te wachten tot je
+            vriendin een pauze neemt in haar verhaal. In dat moment neem je de kans om voor te
+            stellen alvast te gaan zitten, hoe leuk het huidige gesprek ook is. Je vriendin is het er mee
+            eens, en jullie lopen samen richting de zitplaatsen. Zij is hier met haar partner, en naast hen
+            is nog een plekje vrij. Komt dat even mooi uit!
+
+        </p>
+        <div class="choices">
+            (link: "na de ceremonie")[(goto: "Kletskop 4")]
+        </div>
+    </div>
+    <img src="./summer_chique.jpeg">
+</div>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    .choices {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .container img {
+        max-width: 100%;
+        max-height: 70vh;
+    }
+</style>}
+
+
+:: Kletskop 3b {"position":"875,600","size":"100,100"}
+{<div class="container">
+    <div>
+        <p>
+            Je kijkt richting de stoelen die allemaal netjes staan opgesteld. Dat zijn er ruim voldoende, er
+            is straks vast nog wel een plekje beschikbaar. Daarnaast is je vriendin nog steeds
+            enthousiast aan het vertellen, en je had vorige week nog iets meegemaakt wat je gewoon
+            echt moet delen. Jullie blijven nog even bij de tafel staan, en voor jullie het weten tikt er
+            iemand op je schouder. De ceremonie begint zo, en je wordt gevraagd te gaan zitten. Oeps!
+        </p>
+        <div class="choices">
+            (link: "na de ceremonie")[(goto: "Kletskop 4")]
+        </div>
+    </div>
+    <img src="./summer_chique.jpeg">
+</div>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    .choices {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .container img {
+        max-width: 100%;
+        max-height: 70vh;
+    }
+</style>}
+
+
+:: Kletskop 4 {"position":"800,725","size":"100,100"}
+{<div class="container">
+    <div>
+        <p>
+            De ceremonie is afgelopen, en de receptie is in volle gang. De muziek draait er lekker op
+            los, de dansvloer is gevuld. Intussen zit jij met een drankje heerlijk te praten met een klein
+            groepje andere gasten. Jullie delen verhalen over het bruidspaar, waar jullie hen van
+            kennen, wat voor vreemde dingen jullie samen hebben meegemaakt. Elk verhaal is nog
+            leuker dan het vorige, en de tijd vliegt voorbij. Zo nu en dan sta je op en verplaats je naar
+            een andere tafel om daar even bij te praten. Je hebt zelfs nog tijd om de bruid en bruidegom
+            even te spreken! Hoe dan ook, deze receptie is een groot succes. Iedereen heeft het
+            duidelijk naar hun zin, waaronder jij. Je hebt zojuist een gesprek afgerond en stapt weg van
+            die tafel, wanneer de muziek verandert naar jouw favoriete nummer. Eigenlijk had je je
+            voorgenomen om niet te gaan dansen, maar misschien moet je voor dit nummer toch een
+            uitzondering maken. Aan de andere kant, je had nog aan je vriendin beloofd om na de
+            ceremonie verder te praten, en daar heb je de kans nog niet voor gehad. Ga je de dansvloer
+            op, of zoek je naar je vriendin om verder te praten?
+        </p>
+        <div class="choices">
+            (link: "de dansvloer op")[(goto: "Kletskop 5a")]
+            (link: "nog even verder praten")[(goto: "Kletskop 5b")]
+        </div>
+    </div>
+    <img src="./summer_chique.jpeg">
+</div>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    .choices {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .container img {
+        max-width: 100%;
+        max-height: 70vh;
+    }
+</style>}
+
+
+:: Kletskop 5a {"position":"725,850","size":"100,100"}
+{<div class="container">
+    <div>
+        <p>
+DEZE ONTBREEKT NOG
+        </p>
+
+        <div class="choices">
+            (link: "herstart")[(restart:)]
+        </div>
+    </div>
+    <img src="./summer_chique.jpeg">
+</div>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    .choices {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .container img {
+        max-width: 100%;
+        max-height: 70vh;
+    }
+</style>}
+
+
+:: Kletskop 5b {"position":"875,850","size":"100,100"}
+{<div class="container">
+    <div>
+        <p>
+DEZE ONTBREEKT NOG
+        </p>
+
+        <div class="choices">
+            (link: "herstart")[(restart:)]
+        </div>
+    </div>
+    <img src="./summer_chique.jpeg">
+</div>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    .choices {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .container img {
+        max-width: 100%;
+        max-height: 70vh;
+    }
+</style>}
+
+
+:: Wie ben jij? {"position":"800,25","size":"100,100"}
+{<h1>De grote dag!</h1>
 <div class="container">
     <div>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer risus erat, viverra nec pharetra et,
-            viverra eu elit. Vestibulum fringilla fringilla ex et porta. Maecenas facilisis urna metus, at consequat
-            nulla efficitur eget. Nulla eget magna eleifend, mattis nibh in, pharetra est. Donec non commodo lorem.
-            Praesent eu blandit ligula. Maecenas vitae varius felis, nec scelerisque tellus. Mauris vulputate
-            efficitur
-            lectus et pulvinar. Curabitur consequat risus ligula, ac efficitur neque posuere quis. Donec id tortor
-            vulputate, hendrerit neque eu, lobortis felis.
-        </p>
-        <p>
-            Donec eu ligula dolor. Praesent metus neque, pulvinar ac turpis nec, auctor dapibus odio. Duis volutpat
-            pretium magna sit amet fermentum. Aliquam erat volutpat. Vivamus rhoncus nec elit quis ultricies.
-            Integer
+DEZE ONTBREEKT NOG
         </p>
         <p><i>Klik op een bloem om verder te gaan in het verhaal.</i></p>
     </div>
     <div class="carousel">
-        <div class="slide">(link: '<img src="./character.jpg">')[(goto: "P2 Character 3")]</div>
-        <div class="slide">(link: '<img src="./character.jpg">')[(goto: "P2 Character 3")]</div>
-        <div class="slide">(link: '<img src="./character.jpg">')[(goto: "P2 Character 3")]</div>
-        <div class="slide">(link: '<img src="./character.jpg">')[(goto: "P2 Character 3")]</div>
-        <div class="slide">(link: '<img src="./character.jpg">')[(goto: "P2 Character 3")]</div>
+        <div class="slide">(link: '<img src="./character.jpg">')[(goto: "Bruid")]</div>
+        <div class="slide">(link: '<img src="./character.jpg">')[(goto: "Bruidegom")]</div>
+        <div class="slide">(link: '<img src="./character.jpg">')[(goto: "Kletskop")]</div>
+        <div class="slide">(link: '<img src="./character.jpg">')[(goto: "Feestganger")]</div>
+        <div class="slide">(link: '<img src="./character.jpg">')[(goto: "Fotograaf")]</div>
     </div>
 </div>
 
@@ -76,369 +1869,6 @@ Wedding
         display: block;
         border-radius: 8px;
         filter: drop-shadow(3px 3px 1px #2c3e50);
-    }
-</style>}
-
-
-:: P2 Character 3 {"position":"600,225","size":"100,100"}
-{<div class="container">
-    <div>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer risus erat, viverra nec pharetra et,
-            viverra eu elit. Vestibulum fringilla fringilla ex et porta. Maecenas facilisis urna metus, at consequat
-            nulla efficitur eget. Nulla eget magna eleifend, mattis nibh in, pharetra est. Donec non commodo lorem.
-            Praesent eu blandit ligula. Maecenas vitae varius felis, nec scelerisque tellus. Mauris vulputate
-            efficitur
-            lectus et pulvinar. Curabitur consequat risus ligula, ac efficitur neque posuere quis. Donec id tortor
-            vulputate, hendrerit neque eu, lobortis felis.
-        </p>
-
-        <div class="choices">
-            [[P3 C3 a]]
-            [[P3 C3 b]]
-        </div>
-    </div>
-    <img src="./summer_chique.jpeg">
-</div>
-
-<style>
-    .container {
-        display: grid;
-        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
-        gap: 2rem;
-        padding-top: 1rem;
-    }
-
-    .choices {
-        display: flex;
-        gap: 1rem;
-    }
-
-    .container img {
-        max-width: 100%;
-        max-height: 70vh;
-    }
-</style>}
-
-
-:: P3 C3 a {"position":"525,350","size":"100,100"}
-{<div class="container">
-    <div>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer risus erat, viverra nec pharetra et,
-            viverra eu elit. Vestibulum fringilla fringilla ex et porta. Maecenas facilisis urna metus, at consequat
-            nulla efficitur eget. Nulla eget magna eleifend, mattis nibh in, pharetra est. Donec non commodo lorem.
-            Praesent eu blandit ligula. Maecenas vitae varius felis, nec scelerisque tellus. Mauris vulputate
-            efficitur
-            lectus et pulvinar. Curabitur consequat risus ligula, ac efficitur neque posuere quis. Donec id tortor
-            vulputate, hendrerit neque eu, lobortis felis.
-        </p>
-
-        <div class="choices">
-            [[P4 C3]]
-        </div>
-    </div>
-    <img src="./summer_chique.jpeg">
-</div>
-
-<style>
-    .container {
-        display: grid;
-        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
-        gap: 2rem;
-        padding-top: 1rem;
-    }
-
-    .choices {
-        display: flex;
-        gap: 1rem;
-    }
-
-    .container img {
-        max-width: 100%;
-        max-height: 70vh;
-    }
-</style>}
-
-
-:: P3 C3 b {"position":"675,350","size":"100,100"}
-{<div class="container">
-    <div>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer risus erat, viverra nec pharetra et,
-            viverra eu elit. Vestibulum fringilla fringilla ex et porta. Maecenas facilisis urna metus, at consequat
-            nulla efficitur eget. Nulla eget magna eleifend, mattis nibh in, pharetra est. Donec non commodo lorem.
-            Praesent eu blandit ligula. Maecenas vitae varius felis, nec scelerisque tellus. Mauris vulputate
-            efficitur
-            lectus et pulvinar. Curabitur consequat risus ligula, ac efficitur neque posuere quis. Donec id tortor
-            vulputate, hendrerit neque eu, lobortis felis.
-        </p>
-
-        <div class="choices">
-            [[P4 C3]]
-        </div>
-    </div>
-    <img src="./summer_chique.jpeg">
-</div>
-
-<style>
-    .container {
-        display: grid;
-        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
-        gap: 2rem;
-        padding-top: 1rem;
-    }
-
-    .choices {
-        display: flex;
-        gap: 1rem;
-    }
-
-    .container img {
-        max-width: 100%;
-        max-height: 70vh;
-    }
-</style>}
-
-
-:: P4 C3 {"position":"600,475","size":"100,100"}
-{<div class="container">
-    <div>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer risus erat, viverra nec pharetra et,
-            viverra eu elit. Vestibulum fringilla fringilla ex et porta. Maecenas facilisis urna metus, at consequat
-            nulla efficitur eget. Nulla eget magna eleifend, mattis nibh in, pharetra est. Donec non commodo lorem.
-            Praesent eu blandit ligula. Maecenas vitae varius felis, nec scelerisque tellus. Mauris vulputate
-            efficitur
-            lectus et pulvinar. Curabitur consequat risus ligula, ac efficitur neque posuere quis. Donec id tortor
-            vulputate, hendrerit neque eu, lobortis felis.
-        </p>
-
-        <div class="choices">
-            [[P5 C3 a]]
-            [[P5 C3 b]]
-        </div>
-    </div>
-    <img src="./summer_chique.jpeg">
-</div>
-
-<style>
-    .container {
-        display: grid;
-        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
-        gap: 2rem;
-        padding-top: 1rem;
-    }
-
-    .choices {
-        display: flex;
-        gap: 1rem;
-    }
-
-    .container img {
-        max-width: 100%;
-        max-height: 70vh;
-    }
-</style>}
-
-
-:: P5 C3 a {"position":"525,600","size":"100,100"}
-{<div class="container">
-    <div>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer risus erat, viverra nec pharetra et,
-            viverra eu elit. Vestibulum fringilla fringilla ex et porta. Maecenas facilisis urna metus, at consequat
-            nulla efficitur eget. Nulla eget magna eleifend, mattis nibh in, pharetra est. Donec non commodo lorem.
-            Praesent eu blandit ligula. Maecenas vitae varius felis, nec scelerisque tellus. Mauris vulputate
-            efficitur
-            lectus et pulvinar. Curabitur consequat risus ligula, ac efficitur neque posuere quis. Donec id tortor
-            vulputate, hendrerit neque eu, lobortis felis.
-        </p>
-
-        <div class="choices">
-            [[P6 C3]]
-        </div>
-    </div>
-    <img src="./summer_chique.jpeg">
-</div>
-
-<style>
-    .container {
-        display: grid;
-        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
-        gap: 2rem;
-        padding-top: 1rem;
-    }
-
-    .choices {
-        display: flex;
-        gap: 1rem;
-    }
-
-    .container img {
-        max-width: 100%;
-        max-height: 70vh;
-    }
-</style>}
-
-
-:: P5 C3 b {"position":"675,600","size":"100,100"}
-{<div class="container">
-    <div>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer risus erat, viverra nec pharetra et,
-            viverra eu elit. Vestibulum fringilla fringilla ex et porta. Maecenas facilisis urna metus, at consequat
-            nulla efficitur eget. Nulla eget magna eleifend, mattis nibh in, pharetra est. Donec non commodo lorem.
-            Praesent eu blandit ligula. Maecenas vitae varius felis, nec scelerisque tellus. Mauris vulputate
-            efficitur
-            lectus et pulvinar. Curabitur consequat risus ligula, ac efficitur neque posuere quis. Donec id tortor
-            vulputate, hendrerit neque eu, lobortis felis.
-        </p>
-
-        <div class="choices">
-            [[P6 C3]]
-        </div>
-    </div>
-    <img src="./summer_chique.jpeg">
-</div>
-
-<style>
-    .container {
-        display: grid;
-        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
-        gap: 2rem;
-        padding-top: 1rem;
-    }
-
-    .choices {
-        display: flex;
-        gap: 1rem;
-    }
-
-    .container img {
-        max-width: 100%;
-        max-height: 70vh;
-    }
-</style>}
-
-
-:: P6 C3 {"position":"600,725","size":"100,100"}
-{<div class="container">
-    <div>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer risus erat, viverra nec pharetra et,
-            viverra eu elit. Vestibulum fringilla fringilla ex et porta. Maecenas facilisis urna metus, at consequat
-            nulla efficitur eget. Nulla eget magna eleifend, mattis nibh in, pharetra est. Donec non commodo lorem.
-            Praesent eu blandit ligula. Maecenas vitae varius felis, nec scelerisque tellus. Mauris vulputate
-            efficitur
-            lectus et pulvinar. Curabitur consequat risus ligula, ac efficitur neque posuere quis. Donec id tortor
-            vulputate, hendrerit neque eu, lobortis felis.
-        </p>
-
-        <div class="choices">
-            [[P7 C3 a]]
-            [[P7 C3 b]]
-        </div>
-    </div>
-    <img src="./summer_chique.jpeg">
-</div>
-
-<style>
-    .container {
-        display: grid;
-        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
-        gap: 2rem;
-        padding-top: 1rem;
-    }
-
-    .choices {
-        display: flex;
-        gap: 1rem;
-    }
-
-    .container img {
-        max-width: 100%;
-        max-height: 70vh;
-    }
-</style>}
-
-
-:: P7 C3 a {"position":"525,850","size":"100,100"}
-{<div class="container">
-    <div>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer risus erat, viverra nec pharetra et,
-            viverra eu elit. Vestibulum fringilla fringilla ex et porta. Maecenas facilisis urna metus, at consequat
-            nulla efficitur eget. Nulla eget magna eleifend, mattis nibh in, pharetra est. Donec non commodo lorem.
-            Praesent eu blandit ligula. Maecenas vitae varius felis, nec scelerisque tellus. Mauris vulputate
-            efficitur
-            lectus et pulvinar. Curabitur consequat risus ligula, ac efficitur neque posuere quis. Donec id tortor
-            vulputate, hendrerit neque eu, lobortis felis.
-        </p>
-
-        <div class="choices">
-            [[P1]]
-        </div>
-    </div>
-    <img src="./summer_chique.jpeg">
-</div>
-
-<style>
-    .container {
-        display: grid;
-        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
-        gap: 2rem;
-        padding-top: 1rem;
-    }
-
-    .choices {
-        display: flex;
-        gap: 1rem;
-    }
-
-    .container img {
-        max-width: 100%;
-        max-height: 70vh;
-    }
-</style>}
-
-
-:: P7 C3 b {"position":"675,850","size":"100,100"}
-{<div class="container">
-    <div>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer risus erat, viverra nec pharetra et,
-            viverra eu elit. Vestibulum fringilla fringilla ex et porta. Maecenas facilisis urna metus, at consequat
-            nulla efficitur eget. Nulla eget magna eleifend, mattis nibh in, pharetra est. Donec non commodo lorem.
-            Praesent eu blandit ligula. Maecenas vitae varius felis, nec scelerisque tellus. Mauris vulputate
-            efficitur
-            lectus et pulvinar. Curabitur consequat risus ligula, ac efficitur neque posuere quis. Donec id tortor
-            vulputate, hendrerit neque eu, lobortis felis.
-        </p>
-
-        <div class="choices">
-            [[P1]]
-        </div>
-    </div>
-    <img src="./summer_chique.jpeg">
-</div>
-
-<style>
-    .container {
-        display: grid;
-        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
-        gap: 2rem;
-        padding-top: 1rem;
-    }
-
-    .choices {
-        display: flex;
-        gap: 1rem;
-    }
-
-    .container img {
-        max-width: 100%;
-        max-height: 70vh;
     }
 </style>}
 
@@ -519,7 +1949,7 @@ tw-passage {
   background-position: left -165px top -20px;
 }
 
-tw-expression tw-link {
+.choices tw-hook tw-link {
   background-image: url('./button.svg');
   background-repeat: no-repeat;
   border: 0 solid #1A365D;
@@ -547,19 +1977,19 @@ tw-expression tw-link {
   touch-action: manipulation;
 }
 
-tw-expression tw-link.visited {
+.choices tw-hook tw-link.visited {
   color: #2C3E50 !important;
 }
 
-tw-expression tw-link:hover {
+.choices tw-hook tw-link:hover {
   color: #6941E1 !important;
 }
 
-tw-expression tw-link:focus {
+.choices tw-hook tw-link:focus {
   outline: 0;
 }
 
-tw-expression tw-link:after {
+.choices tw-hook tw-link:after {
   content: '';
   position: absolute;
   border: 1px solid #2C3E50;
@@ -570,7 +2000,7 @@ tw-expression tw-link:after {
   height: calc(100% - 1px);
 }
 
-tw-expression tw-link:hover:after {
+.choices tw-hook tw-link:hover:after {
   bottom: 2px;
   left: 2px;
 }
